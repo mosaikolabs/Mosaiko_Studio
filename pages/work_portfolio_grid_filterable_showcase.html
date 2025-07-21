@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work Portfolio - Creative Portfolio Showcase</title>
+    <meta name="description" content="Explore a curated collection of design projects spanning web design, branding, UX/UI, and development across various industries." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio2181back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="homepage_creative_portfolio_showcase.html" class="text-2xl font-playfair font-bold text-primary hover:text-accent transition-colors duration-300">
+                    Portfolio<span class="text-accent">.</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Home</a>
+                    <a href="work_portfolio_grid_filterable_showcase.html" class="text-primary font-medium hover:text-accent transition-colors duration-300 border-b-2 border-accent">Work</a>
+                    <a href="about_personal_brand_story.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">About</a>
+                    <a href="process_methodology_showcase.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Process</a>
+                    <a href="blog_insights_thought_leadership.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Blog</a>
+                    <a href="contact_conversion_optimization.html" class="btn-primary">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-primary hover:text-accent transition-colors duration-300" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-gray-100" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-secondary font-medium">Home</a>
+                    <a href="work_portfolio_grid_filterable_showcase.html" class="text-primary font-medium">Work</a>
+                    <a href="about_personal_brand_story.html" class="text-secondary font-medium">About</a>
+                    <a href="process_methodology_showcase.html" class="text-secondary font-medium">Process</a>
+                    <a href="blog_insights_thought_leadership.html" class="text-secondary font-medium">Blog</a>
+                    <a href="contact_conversion_optimization.html" class="text-secondary font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h1 class="text-hero font-playfair mb-6 text-primary">
+                    Portfolio <span class="text-accent">Showcase</span>
+                </h1>
+                <p class="text-xl text-secondary max-w-3xl mx-auto leading-relaxed">
+                    A curated collection of projects spanning web design, branding, UX/UI, and development. 
+                    Each piece represents a unique challenge solved through strategic thinking and creative execution.
+                </p>
+            </div>
+            
+            <!-- Portfolio Statistics -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="text-3xl font-playfair font-bold text-accent mb-2">24</div>
+                    <div class="text-secondary">Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-playfair font-bold text-accent mb-2">5</div>
+                    <div class="text-secondary">Years Active</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-playfair font-bold text-accent mb-2">8</div>
+                    <div class="text-secondary">Industries</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-playfair font-bold text-accent mb-2">18</div>
+                    <div class="text-secondary">Happy Clients</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter and Search Section -->
+    <section class="py-8 bg-white border-b border-gray-100 sticky top-20 z-40">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-6 items-center justify-between">
+                <!-- Search Bar -->
+                <div class="relative flex-1 max-w-md">
+                    <input type="text" id="search-input" placeholder="Search projects..." class="form-input pl-12 pr-4" />
+                    <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                    </svg>
+                </div>
+                
+                <!-- Filter Controls -->
+                <div class="flex flex-wrap gap-4 items-center">
+                    <!-- Project Type Filter -->
+                    <select id="type-filter" class="form-input min-w-40">
+                        <option value>All Types</option>
+                        <option value="web-design">Web Design</option>
+                        <option value="branding">Branding</option>
+                        <option value="ux-ui">UX/UI</option>
+                        <option value="development">Development</option>
+                    </select>
+                    
+                    <!-- Industry Filter -->
+                    <select id="industry-filter" class="form-input min-w-40">
+                        <option value>All Industries</option>
+                        <option value="tech">Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="nonprofit">Non-profit</option>
+                        <option value="finance">Finance</option>
+                        <option value="education">Education</option>
+                    </select>
+                    
+                    <!-- Year Filter -->
+                    <select id="year-filter" class="form-input min-w-32">
+                        <option value>All Years</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                    </select>
+                    
+                    <!-- Clear Filters -->
+                    <button id="clear-filters" class="btn-secondary text-sm px-4 py-2">
+                        Clear All
+                    </button>
+                    
+                    <!-- Surprise Me Button -->
+                    <button id="surprise-me" class="btn-primary text-sm px-4 py-2 bg-warning hover:bg-warning/90">
+                        Surprise Me
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Active Filters Display -->
+            <div id="active-filters" class="mt-4 flex flex-wrap gap-2 hidden">
+                <span class="text-sm text-secondary">Active filters:</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Loading Skeleton -->
+            <div id="loading-skeleton" class="hidden">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Skeleton Cards -->
+                    <div class="animate-pulse" v-for="i in 8">
+                        <div class="bg-gray-200 h-64 rounded-lg mb-4"></div>
+                        <div class="bg-gray-200 h-4 rounded mb-2"></div>
+                        <div class="bg-gray-200 h-3 rounded w-3/4"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="web-design" data-industry="tech" data-year="2024" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3" alt="E-commerce platform redesign" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">TechCorp Platform</h3>
+                            <p class="text-sm">Complete UX overhaul</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">E-commerce Platform Redesign</h3>
+                        <p class="text-secondary text-sm mb-3">TechCorp • 2024</p>
+                        <p class="text-secondary mb-4">Complete UX overhaul resulting in 40% increase in conversion rates</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Web Design</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">UX/UI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="branding" data-industry="healthcare" data-year="2024" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Healthcare brand identity" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">MedCare Identity</h3>
+                            <p class="text-sm">Complete brand system</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Healthcare Brand Identity</h3>
+                        <p class="text-secondary text-sm mb-3">MedCare Solutions • 2024</p>
+                        <p class="text-secondary mb-4">Comprehensive brand identity for healthcare technology startup</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Branding</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Visual Identity</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="ux-ui" data-industry="finance" data-year="2024" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="FinTech mobile app" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">FinTech App</h3>
+                            <p class="text-sm">Mobile banking solution</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">FinTech Mobile App</h3>
+                        <p class="text-secondary text-sm mb-3">StartupXYZ • 2024</p>
+                        <p class="text-secondary mb-4">User-centered design for complex financial workflows</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">UX/UI</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Mobile Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="development" data-industry="ecommerce" data-year="2023" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3" alt="E-commerce dashboard" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">Analytics Dashboard</h3>
+                            <p class="text-sm">Data visualization platform</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Analytics Dashboard</h3>
+                        <p class="text-secondary text-sm mb-3">DataCorp • 2023</p>
+                        <p class="text-secondary mb-4">Complex data visualization made intuitive and actionable</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Development</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Data Viz</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="web-design" data-industry="nonprofit" data-year="2023" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Non-profit website" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">Non-profit Site</h3>
+                            <p class="text-sm">Mission-driven design</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Non-profit Website</h3>
+                        <p class="text-secondary text-sm mb-3">Hope Foundation • 2023</p>
+                        <p class="text-secondary mb-4">Accessible design focused on storytelling and donations</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Web Design</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Accessibility</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="branding" data-industry="education" data-year="2023" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg" alt="Education platform branding" class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">EduTech Brand</h3>
+                            <p class="text-sm">Learning platform identity</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Education Platform Branding</h3>
+                        <p class="text-secondary text-sm mb-3">LearnTech • 2023</p>
+                        <p class="text-secondary mb-4">Brand identity for innovative online learning platform</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Branding</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Education</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="ux-ui" data-industry="tech" data-year="2022" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="SaaS platform design" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2015/02/05/08/21/marketing-626762_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">SaaS Platform</h3>
+                            <p class="text-sm">Enterprise solution</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">SaaS Platform Design</h3>
+                        <p class="text-secondary text-sm mb-3">CloudTech • 2022</p>
+                        <p class="text-secondary mb-4">Enterprise-grade platform with intuitive user experience</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">UX/UI</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Enterprise</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-card card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" data-type="development" data-industry="healthcare" data-year="2022" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Healthcare app development" class="w-full h-72 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
+                            <h3 class="font-playfair text-lg font-semibold mb-1">HealthTech App</h3>
+                            <p class="text-sm">Patient management system</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Healthcare Management App</h3>
+                        <p class="text-secondary text-sm mb-3">HealthTech Solutions • 2022</p>
+                        <p class="text-secondary mb-4">Secure patient management system with HIPAA compliance</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Development</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Healthcare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-16">
+                <button id="load-more" class="btn-primary text-lg px-8 py-4">
+                    Load More Projects
+                </button>
+            </div>
+            
+            <!-- No Results Message -->
+            <div id="no-results" class="hidden text-center py-16">
+                <svg class="w-24 h-24 mx-auto text-secondary mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.172 16.172a4 4 0 015.656 0M9 12h6m-6-4h6m2 5.291A7.962 7.962 0 0112 15c-2.34 0-4.47-.881-6.08-2.33"/>
+                </svg>
+                <h3 class="text-xl font-playfair font-semibold mb-4 text-primary">No Projects Found</h3>
+                <p class="text-secondary mb-6">Try adjusting your filters or search terms to find what you're looking for.</p>
+                <button id="clear-search" class="btn-secondary">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recently Viewed Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-display font-playfair text-primary">Recently Viewed</h2>
+                <button id="clear-history" class="text-secondary hover:text-accent transition-colors duration-300 text-sm">
+                    Clear History
+                </button>
+            </div>
+            
+            <div id="recently-viewed" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Recently viewed projects will be populated by JavaScript -->
+                <div class="text-center py-12 col-span-full">
+                    <p class="text-secondary">No recently viewed projects yet. Start exploring!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-display font-playfair mb-4">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 opacity-90">
+                Let's collaborate to create something extraordinary. Every great project starts with a conversation.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_conversion_optimization.html" class="btn-primary bg-accent hover:bg-accent/90 text-lg px-8 py-4">
+                    Start a Project
+                </a>
+                <a href="process_methodology_showcase.html" class="btn-secondary bg-white/10 border-white/30 text-white hover:bg-white hover:text-primary text-lg px-8 py-4">
+                    Learn My Process
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-2xl font-playfair font-bold text-primary mb-4 block">
+                        Portfolio<span class="text-accent">.</span>
+                    </a>
+                    <p class="text-secondary mb-6 max-w-md">
+                        Creating digital experiences that seamlessly blend aesthetic excellence with strategic thinking, 
+                        where invisible design becomes extraordinary.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.840-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91-.11-.937-.227-2.482.025-3.566.217-.932 1.405-5.956 1.405-5.956s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.840-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="work_portfolio_grid_filterable_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="about_personal_brand_story.html" class="text-secondary hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="process_methodology_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Process</a></li>
+                        <li><a href="blog_insights_thought_leadership.html" class="text-secondary hover:text-accent transition-colors duration-300">Blog</a></li>
+                        <li><a href="resources_value_added_downloads.html" class="text-secondary hover:text-accent transition-colors duration-300">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4 text-primary">Get in Touch</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact_conversion_optimization.html" class="text-secondary hover:text-accent transition-colors duration-300">Contact Form</a></li>
+                        <li><a href="mailto:hello@portfolio.com" class="text-secondary hover:text-accent transition-colors duration-300">hello@portfolio.com</a></li>
+                        <li><a href="tel:+1234567890" class="text-secondary hover:text-accent transition-colors duration-300">+1 (234) 567-890</a></li>
+                        <li class="text-secondary">Available for projects</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary text-sm">
+                    © 2025 Portfolio Reimagined. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Terms of Service</a>
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Portfolio filtering and search functionality
+        const searchInput = document.getElementById('search-input');
+        const typeFilter = document.getElementById('type-filter');
+        const industryFilter = document.getElementById('industry-filter');
+        const yearFilter = document.getElementById('year-filter');
+        const clearFiltersBtn = document.getElementById('clear-filters');
+        const surpriseMeBtn = document.getElementById('surprise-me');
+        const portfolioGrid = document.getElementById('portfolio-grid');
+        const activeFiltersDiv = document.getElementById('active-filters');
+        const noResultsDiv = document.getElementById('no-results');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        // Recently viewed functionality
+        let recentlyViewed = JSON.parse(localStorage.getItem('recentlyViewed') || '[]');
+        
+        function updateRecentlyViewed(projectTitle, projectImage, projectUrl) {
+            const project = { title: projectTitle, image: projectImage, url: projectUrl, timestamp: Date.now() };
+            recentlyViewed = recentlyViewed.filter(p => p.title !== projectTitle);
+            recentlyViewed.unshift(project);
+            recentlyViewed = recentlyViewed.slice(0, 4); // Keep only 4 recent items
+            localStorage.setItem('recentlyViewed', JSON.stringify(recentlyViewed));
+            displayRecentlyViewed();
+        }
+
+        function displayRecentlyViewed() {
+            const container = document.getElementById('recently-viewed');
+            if (recentlyViewed.length === 0) {
+                container.innerHTML = '<div class="text-center py-12 col-span-full"><p class="text-secondary">No recently viewed projects yet. Start exploring!</p></div>';
+                return;
+            }
+
+            container.innerHTML = recentlyViewed.map(project => `
+                <div class="card group cursor-pointer overflow-hidden transition-all duration-300 hover:scale-105" onclick="window.location.href='${project.url}'">
+                    <div class="relative overflow-hidden">
+                        <img src="${project.image}" alt="${project.title}" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-playfair text-lg font-semibold text-primary group-hover:text-accent transition-colors duration-300">${project.title}</h3>
+                        <p class="text-secondary text-sm">Recently viewed</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Add click listeners to project cards for recently viewed
+        projectCards.forEach(card => {
+            card.addEventListener('click', () => {
+                const title = card.querySelector('h3').textContent;
+                const image = card.querySelector('img').src;
+                const url = 'case_study_template_process_storytelling.html';
+                updateRecentlyViewed(title, image, url);
+            });
+        });
+
+        // Clear recently viewed
+        document.getElementById('clear-history').addEventListener('click', () => {
+            recentlyViewed = [];
+            localStorage.removeItem('recentlyViewed');
+            displayRecentlyViewed();
+        });
+
+        // Initialize recently viewed on page load
+        displayRecentlyViewed();
+
+        // Filter functionality
+        function filterProjects() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const typeValue = typeFilter.value;
+            const industryValue = industryFilter.value;
+            const yearValue = yearFilter.value;
+
+            let visibleCount = 0;
+            const activeFilters = [];
+
+            projectCards.forEach(card => {
+                const cardText = card.textContent.toLowerCase();
+                const cardType = card.dataset.type;
+                const cardIndustry = card.dataset.industry;
+                const cardYear = card.dataset.year;
+
+                const matchesSearch = !searchTerm || cardText.includes(searchTerm);
+                const matchesType = !typeValue || cardType === typeValue;
+                const matchesIndustry = !industryValue || cardIndustry === industryValue;
+                const matchesYear = !yearValue || cardYear === yearValue;
+
+                const isVisible = matchesSearch && matchesType && matchesIndustry && matchesYear;
+
+                if (isVisible) {
+                    card.style.display = 'block';
+                    card.classList.add('animate-fade-in');
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('animate-fade-in');
+                }
+            });
+
+            // Update active filters display
+            if (searchTerm) activeFilters.push(`Search: "${searchTerm}"`);
+            if (typeValue) activeFilters.push(`Type: ${typeFilter.options[typeFilter.selectedIndex].text}`);
+            if (industryValue) activeFilters.push(`Industry: ${industryFilter.options[industryFilter.selectedIndex].text}`);
+            if (yearValue) activeFilters.push(`Year: ${yearValue}`);
+
+            if (activeFilters.length > 0) {
+                activeFiltersDiv.innerHTML = `
+                    <span class="text-sm text-secondary">Active filters:</span>
+                    ${activeFilters.map(filter => `<span class="px-3 py-1 bg-accent/10 text-accent text-sm rounded-full">${filter}</span>`).join('')}
+                `;
+                activeFiltersDiv.classList.remove('hidden');
+            } else {
+                activeFiltersDiv.classList.add('hidden');
+            }
+
+            // Show/hide no results message
+            if (visibleCount === 0) {
+                noResultsDiv.classList.remove('hidden');
+                portfolioGrid.classList.add('hidden');
+            } else {
+                noResultsDiv.classList.add('hidden');
+                portfolioGrid.classList.remove('hidden');
+            }
+
+            // Update URL with current filters
+            updateURL();
+        }
+
+        // Update URL with filter state
+        function updateURL() {
+            const params = new URLSearchParams();
+            if (searchInput.value) params.set('search', searchInput.value);
+            if (typeFilter.value) params.set('type', typeFilter.value);
+            if (industryFilter.value) params.set('industry', industryFilter.value);
+            if (yearFilter.value) params.set('year', yearFilter.value);
+            
+            const newURL = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+            window.history.replaceState({}, '', newURL);
+        }
+
+        // Load filters from URL on page load
+        function loadFiltersFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            if (params.get('search')) searchInput.value = params.get('search');
+            if (params.get('type')) typeFilter.value = params.get('type');
+            if (params.get('industry')) industryFilter.value = params.get('industry');
+            if (params.get('year')) yearFilter.value = params.get('year');
+            filterProjects();
+        }
+
+        // Event listeners
+        searchInput.addEventListener('input', filterProjects);
+        typeFilter.addEventListener('change', filterProjects);
+        industryFilter.addEventListener('change', filterProjects);
+        yearFilter.addEventListener('change', filterProjects);
+
+        // Clear all filters
+        clearFiltersBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            typeFilter.value = '';
+            industryFilter.value = '';
+            yearFilter.value = '';
+            filterProjects();
+        });
+
+        // Clear search from no results
+        document.getElementById('clear-search').addEventListener('click', () => {
+            searchInput.value = '';
+            typeFilter.value = '';
+            industryFilter.value = '';
+            yearFilter.value = '';
+            filterProjects();
+        });
+
+        // Surprise me functionality
+        surpriseMeBtn.addEventListener('click', () => {
+            const visibleCards = Array.from(projectCards).filter(card => card.style.display !== 'none');
+            if (visibleCards.length > 0) {
+                const randomCard = visibleCards[Math.floor(Math.random() * visibleCards.length)];
+                randomCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                randomCard.classList.add('ring-4', 'ring-accent', 'ring-opacity-50');
+                setTimeout(() => {
+                    randomCard.classList.remove('ring-4', 'ring-accent', 'ring-opacity-50');
+                }, 2000);
+            }
+        });
+
+        // Load more functionality (simulated)
+        document.getElementById('load-more').addEventListener('click', function() {
+            this.textContent = 'Loading...';
+            this.disabled = true;
+            
+            setTimeout(() => {
+                this.textContent = 'All Projects Loaded';
+                this.classList.add('opacity-50', 'cursor-not-allowed');
+            }, 1500);
+        });
+
+        // Initialize filters from URL
+        loadFiltersFromURL();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-medium');
+            } else {
+                nav.classList.remove('shadow-medium');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe project cards for animations
+        projectCards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+
+</body>
+</html>

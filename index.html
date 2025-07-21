@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Portfolio - Performance-First Design</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio2181back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-surface to-background">
+        <div class="text-center max-w-2xl mx-auto px-6">
+            <div class="animate-fade-in">
+                <h1 class="font-playfair text-hero text-primary mb-6">
+                    Welcome to Strategic Minimalism
+                </h1>
+                <p class="text-body text-text-secondary mb-8 max-w-lg mx-auto">
+                    Discover a portfolio where restraint and intentionality create the new luxury in digital creative work.
+                </p>
+                <div class="space-y-4">
+                    <div class="animate-slide-up" style="animation-delay: 0.2s;">
+                        <button onclick="redirectToPage()" class="btn-primary inline-flex items-center space-x-2">
+                            <span>Enter Portfolio</span>
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="text-caption text-text-secondary">
+                        Redirecting to homepage in <span id="countdown">5</span> seconds...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Available pages
+        const pages = [
+            'homepage_creative_portfolio_showcase.html',
+            'work_portfolio_grid_filterable_showcase.html',
+            'case_study_template_process_storytelling.html',
+            'about_personal_brand_story.html',
+            'contact_conversion_optimization.html',
+            'process_methodology_showcase.html',
+            'blog_insights_thought_leadership.html',
+            'resources_value_added_downloads.html'
+        ];
+
+        // Default redirect to homepage
+        const defaultPage = 'pages/homepage_creative_portfolio_showcase.html';
+
+        function redirectToPage() {
+            window.location.href = defaultPage;
+        }
+
+        // Auto redirect countdown
+        let countdown = 5;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(() => {
+            countdown--;
+            countdownElement.textContent = countdown;
+            
+            if (countdown <= 0) {
+                clearInterval(timer);
+                redirectToPage();
+            }
+        }, 1000);
+
+        // Allow manual navigation
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                clearInterval(timer);
+                redirectToPage();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Platform Redesign - Case Study | Portfolio Reimagined</title>
+    <meta name="description" content="Complete UX overhaul of TechCorp's e-commerce platform resulting in 40% increase in conversion rates. Discover the strategic design process and measurable results." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fportfolio2181back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="homepage_creative_portfolio_showcase.html" class="text-2xl font-playfair font-bold text-primary hover:text-accent transition-colors duration-300">
+                    Portfolio<span class="text-accent">.</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Home</a>
+                    <a href="work_portfolio_grid_filterable_showcase.html" class="text-primary font-medium hover:text-accent transition-colors duration-300 border-b-2 border-accent">Work</a>
+                    <a href="about_personal_brand_story.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">About</a>
+                    <a href="process_methodology_showcase.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Process</a>
+                    <a href="blog_insights_thought_leadership.html" class="text-secondary font-medium hover:text-accent transition-colors duration-300">Blog</a>
+                    <a href="contact_conversion_optimization.html" class="btn-primary">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2 text-primary hover:text-accent transition-colors duration-300" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden hidden mt-4 pb-4 border-t border-gray-100" id="mobile-menu">
+                <div class="flex flex-col space-y-4 pt-4">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-secondary font-medium">Home</a>
+                    <a href="work_portfolio_grid_filterable_showcase.html" class="text-primary font-medium">Work</a>
+                    <a href="about_personal_brand_story.html" class="text-secondary font-medium">About</a>
+                    <a href="process_methodology_showcase.html" class="text-secondary font-medium">Process</a>
+                    <a href="blog_insights_thought_leadership.html" class="text-secondary font-medium">Blog</a>
+                    <a href="contact_conversion_optimization.html" class="text-secondary font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <section class="pt-24 pb-8 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="homepage_creative_portfolio_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Home</a>
+                <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <a href="work_portfolio_grid_filterable_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Work</a>
+                <svg class="w-4 h-4 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+                <span class="text-primary font-medium">E-commerce Platform Redesign</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Project Hero -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Project Info -->
+                <div>
+                    <div class="flex items-center space-x-4 mb-6">
+                        <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3" alt="TechCorp logo" class="w-16 h-16 rounded-lg object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div>
+                            <h1 class="text-hero font-playfair text-primary mb-2">E-commerce Platform Redesign</h1>
+                            <p class="text-lg text-secondary">TechCorp • 2024</p>
+                        </div>
+                    </div>
+                    
+                    <p class="text-xl text-secondary mb-8 leading-relaxed">
+                        A comprehensive UX overhaul that transformed a struggling e-commerce platform into a conversion-optimized powerhouse, resulting in a 40% increase in sales and dramatically improved user satisfaction.
+                    </p>
+                    
+                    <!-- Project Details -->
+                    <div class="grid grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-2 text-primary">My Role</h3>
+                            <p class="text-secondary">Lead UX/UI Designer</p>
+                            <p class="text-secondary">Frontend Developer</p>
+                        </div>
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-2 text-primary">Timeline</h3>
+                            <p class="text-secondary">4 months</p>
+                            <p class="text-secondary">March - June 2024</p>
+                        </div>
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-2 text-primary">Team</h3>
+                            <p class="text-secondary">2 Designers</p>
+                            <p class="text-secondary">3 Developers</p>
+                        </div>
+                        <div>
+                            <h3 class="font-playfair text-lg font-semibold mb-2 text-primary">Platform</h3>
+                            <p class="text-secondary">Web Application</p>
+                            <p class="text-secondary">Mobile Responsive</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3" alt="E-commerce platform redesign showcase" class="w-full rounded-lg shadow-medium" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content with Sidebar -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+                <!-- Sidebar Navigation -->
+                <div class="lg:col-span-1">
+                    <div class="sticky top-32">
+                        <h3 class="font-playfair text-lg font-semibold mb-6 text-primary">Case Study Sections</h3>
+                        <nav class="space-y-3" id="case-study-nav">
+                            <a href="#overview" class="nav-link active flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-sm font-medium">Project Overview</span>
+                            </a>
+                            <a href="#discovery" class="nav-link flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                                <span class="text-sm font-medium">Discovery & Research</span>
+                            </a>
+                            <a href="#strategy" class="nav-link flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                                <span class="text-sm font-medium">Strategy & Planning</span>
+                            </a>
+                            <a href="#design" class="nav-link flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                                <span class="text-sm font-medium">Design Process</span>
+                            </a>
+                            <a href="#development" class="nav-link flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                                <span class="text-sm font-medium">Development</span>
+                            </a>
+                            <a href="#results" class="nav-link flex items-center space-x-3 p-3 rounded-lg transition-all duration-300">
+                                <div class="w-2 h-2 bg-gray-300 rounded-full"></div>
+                                <span class="text-sm font-medium">Results & Impact</span>
+                            </a>
+                        </nav>
+                        
+                        <!-- Progress Indicator -->
+                        <div class="mt-8">
+                            <div class="flex items-center justify-between mb-2">
+                                <span class="text-sm text-secondary">Reading Progress</span>
+                                <span class="text-sm text-secondary" id="progress-text">0%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-accent h-2 rounded-full transition-all duration-300" id="progress-bar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Main Content -->
+                <div class="lg:col-span-3">
+                    <!-- Project Overview -->
+                    <section id="overview" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Project Overview</h2>
+                        
+                        <!-- Challenge -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-4 text-primary">The Challenge</h3>
+                            <p class="text-lg text-secondary mb-6 leading-relaxed">
+                                TechCorp's existing e-commerce platform was experiencing declining conversion rates, high cart abandonment (78%), and poor user satisfaction scores. The outdated interface, complex checkout process, and lack of mobile optimization were driving customers away to competitors.
+                            </p>
+                            <div class="bg-surface p-6 rounded-lg">
+                                <h4 class="font-semibold mb-3 text-primary">Key Problems Identified:</h4>
+                                <ul class="space-y-2 text-secondary">
+                                    <li class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                        </svg>
+                                        <span>78% cart abandonment rate</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                        </svg>
+                                        <span>Poor mobile experience (2.1/5 user rating)</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                        </svg>
+                                        <span>Complex 7-step checkout process</span>
+                                    </li>
+                                    <li class="flex items-start space-x-3">
+                                        <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                                        </svg>
+                                        <span>Inconsistent design system</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Solution -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-4 text-primary">The Solution</h3>
+                            <p class="text-lg text-secondary mb-6 leading-relaxed">
+                                A complete platform redesign focused on user-centered design principles, streamlined user flows, and mobile-first approach. The solution included a comprehensive design system, simplified checkout process, and enhanced product discovery features.
+                            </p>
+                        </div>
+                        
+                        <!-- Results Preview -->
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                <div class="text-3xl font-playfair font-bold text-success mb-2">+40%</div>
+                                <p class="text-secondary">Conversion Rate</p>
+                            </div>
+                            <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                <div class="text-3xl font-playfair font-bold text-success mb-2">-45%</div>
+                                <p class="text-secondary">Cart Abandonment</p>
+                            </div>
+                            <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                <div class="text-3xl font-playfair font-bold text-success mb-2">4.7/5</div>
+                                <p class="text-secondary">User Satisfaction</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Discovery & Research -->
+                    <section id="discovery" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Discovery & Research</h2>
+                        
+                        <div class="mb-8">
+                            <h3 class="font-playfair text-xl font-semibold mb-4 text-primary">User Research</h3>
+                            <p class="text-lg text-secondary mb-6 leading-relaxed">
+                                We conducted extensive user research to understand pain points and opportunities. This included user interviews, analytics analysis, and competitive research to inform our design decisions.
+                            </p>
+                        </div>
+                        
+                        <!-- Research Methods -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                            <div class="card p-6">
+                                <div class="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-playfair text-lg font-semibold mb-3 text-primary">User Interviews</h4>
+                                <p class="text-secondary mb-4">Conducted 24 in-depth interviews with existing and potential customers to understand their shopping behaviors and pain points.</p>
+                                <ul class="text-sm text-secondary space-y-1">
+                                    <li>• 24 participants across 3 user segments</li>
+                                    <li>• 45-minute sessions via video call</li>
+                                    <li>• Task-based scenarios and open questions</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="card p-6">
+                                <div class="w-12 h-12 bg-warning/10 rounded-lg flex items-center justify-center mb-4">
+                                    <svg class="w-6 h-6 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="font-playfair text-lg font-semibold mb-3 text-primary">Analytics Analysis</h4>
+                                <p class="text-secondary mb-4">Deep dive into existing platform data to identify drop-off points and user behavior patterns.</p>
+                                <ul class="text-sm text-secondary space-y-1">
+                                    <li>• 6 months of user behavior data</li>
+                                    <li>• Heatmap analysis of key pages</li>
+                                    <li>• Conversion funnel optimization</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Key Insights -->
+                        <div class="bg-surface p-8 rounded-lg">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Key Research Insights</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="font-semibold mb-3 text-primary">User Behavior Patterns</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>85% of users shop on mobile devices</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Users expect 3-step checkout maximum</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Product images are the primary decision factor</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-3 text-primary">Pain Points</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>Confusing navigation structure</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>Slow loading times on mobile</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-error mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>Lack of trust indicators</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Strategy & Planning -->
+                    <section id="strategy" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Strategy & Planning</h2>
+                        
+                        <!-- User Personas -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">User Personas</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="card p-6">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b47c?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Sarah persona" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <div>
+                                            <h4 class="font-playfair text-lg font-semibold text-primary">Sarah Chen</h4>
+                                            <p class="text-secondary">Busy Professional</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary mb-4">32-year-old marketing manager who shops primarily on mobile during commutes and lunch breaks.</p>
+                                    <div class="space-y-2 text-sm">
+                                        <div><strong class="text-primary">Goals:</strong> Quick, efficient shopping</div>
+                                        <div><strong class="text-primary">Frustrations:</strong> Slow checkout, poor mobile UX</div>
+                                        <div><strong class="text-primary">Devices:</strong> iPhone, iPad</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="card p-6">
+                                    <div class="flex items-center space-x-4 mb-4">
+                                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mike persona" class="w-16 h-16 rounded-full object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <div>
+                                            <h4 class="font-playfair text-lg font-semibold text-primary">Mike Rodriguez</h4>
+                                            <p class="text-secondary">Tech Enthusiast</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-secondary mb-4">28-year-old software developer who researches extensively before making purchases.</p>
+                                    <div class="space-y-2 text-sm">
+                                        <div><strong class="text-primary">Goals:</strong> Detailed product info, comparisons</div>
+                                        <div><strong class="text-primary">Frustrations:</strong> Lack of technical specs</div>
+                                        <div><strong class="text-primary">Devices:</strong> Desktop, Android</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- User Journey Map -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">User Journey Mapping</h3>
+                            <div class="bg-surface p-8 rounded-lg">
+                                <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-white font-semibold">1</span>
+                                        </div>
+                                        <h4 class="font-semibold text-primary mb-2">Discovery</h4>
+                                        <p class="text-sm text-secondary">User finds product through search or social media</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-white font-semibold">2</span>
+                                        </div>
+                                        <h4 class="font-semibold text-primary mb-2">Research</h4>
+                                        <p class="text-sm text-secondary">Reviews product details, images, and specifications</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-white font-semibold">3</span>
+                                        </div>
+                                        <h4 class="font-semibold text-primary mb-2">Decision</h4>
+                                        <p class="text-sm text-secondary">Adds to cart and begins checkout process</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-white font-semibold">4</span>
+                                        </div>
+                                        <h4 class="font-semibold text-primary mb-2">Purchase</h4>
+                                        <p class="text-sm text-secondary">Completes payment and receives confirmation</p>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                                            <span class="text-white font-semibold">5</span>
+                                        </div>
+                                        <h4 class="font-semibold text-primary mb-2">Follow-up</h4>
+                                        <p class="text-sm text-secondary">Receives product and potentially leaves review</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Wireframes -->
+                        <div>
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Initial Wireframes</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div>
+                                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Mobile wireframes" class="w-full rounded-lg shadow-soft" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <p class="text-center text-sm text-secondary mt-3">Mobile wireframes focusing on simplified navigation</p>
+                                </div>
+                                <div>
+                                    <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Desktop wireframes" class="w-full rounded-lg shadow-soft" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                                    <p class="text-center text-sm text-secondary mt-3">Desktop layout with enhanced product discovery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Design Process -->
+                    <section id="design" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Design Process</h2>
+                        
+                        <!-- Design System -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Design System Development</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Colors -->
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-4 text-primary">Color Palette</h4>
+                                    <div class="space-y-3">
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-blue-600 rounded"></div>
+                                            <span class="text-sm text-secondary">Primary Blue #2563EB</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-gray-900 rounded"></div>
+                                            <span class="text-sm text-secondary">Text Dark #111827</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-green-500 rounded"></div>
+                                            <span class="text-sm text-secondary">Success #10B981</span>
+                                        </div>
+                                        <div class="flex items-center space-x-3">
+                                            <div class="w-8 h-8 bg-gray-100 rounded border"></div>
+                                            <span class="text-sm text-secondary">Background #F9FAFB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Typography -->
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-4 text-primary">Typography</h4>
+                                    <div class="space-y-3">
+                                        <div>
+                                            <div class="font-playfair text-lg font-semibold">Playfair Display</div>
+                                            <p class="text-sm text-secondary">Headings & Display</p>
+                                        </div>
+                                        <div>
+                                            <div class="font-inter text-base">Inter Regular</div>
+                                            <p class="text-sm text-secondary">Body Text</p>
+                                        </div>
+                                        <div>
+                                            <div class="font-inter text-sm font-medium">Inter Medium</div>
+                                            <p class="text-sm text-secondary">UI Elements</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Components -->
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-4 text-primary">Key Components</h4>
+                                    <div class="space-y-3">
+                                        <button class="btn-primary w-full text-sm">Primary Button</button>
+                                        <button class="btn-secondary w-full text-sm">Secondary Button</button>
+                                        <div class="form-input text-sm" style="padding: 8px 12px;">Input Field</div>
+                                        <div class="bg-surface p-3 rounded text-sm text-secondary">Card Component</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Before/After Comparison -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Before & After Comparison</h3>
+                            <div class="bg-surface p-8 rounded-lg">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div>
+                                        <h4 class="font-semibold mb-4 text-error">Before: Original Design</h4>
+                                        <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Original design" class="w-full rounded-lg shadow-soft mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <ul class="text-sm text-secondary space-y-1">
+                                            <li>• Cluttered interface</li>
+                                            <li>• Poor mobile experience</li>
+                                            <li>• Complex navigation</li>
+                                            <li>• Inconsistent styling</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold mb-4 text-success">After: Redesigned Interface</h4>
+                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Redesigned interface" class="w-full rounded-lg shadow-soft mb-4" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                        <ul class="text-sm text-secondary space-y-1">
+                                            <li>• Clean, focused design</li>
+                                            <li>• Mobile-first approach</li>
+                                            <li>• Intuitive navigation</li>
+                                            <li>• Consistent design system</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- User Testing -->
+                        <div>
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">User Testing & Iterations</h3>
+                            <p class="text-lg text-secondary mb-6 leading-relaxed">
+                                We conducted multiple rounds of user testing with interactive prototypes to validate design decisions and identify areas for improvement.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-3 text-primary">Testing Methods</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Moderated usability testing (12 participants)</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>A/B testing on key flows</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Heatmap analysis of prototype interactions</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-3 text-primary">Key Improvements</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                            <span>Reduced checkout from 7 to 3 steps</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                            <span>Improved product image gallery</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                            <span>Enhanced search and filtering</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Development & Implementation -->
+                    <section id="development" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Development & Implementation</h2>
+                        
+                        <div class="mb-8">
+                            <h3 class="font-playfair text-xl font-semibold mb-4 text-primary">Technical Approach</h3>
+                            <p class="text-lg text-secondary mb-6 leading-relaxed">
+                                The implementation focused on performance optimization, accessibility compliance, and seamless integration with existing backend systems.
+                            </p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                            <div class="card p-6">
+                                <h4 class="font-semibold mb-4 text-primary">Frontend Technologies</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-blue-100 rounded flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-secondary">React.js with TypeScript</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-green-100 rounded flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M0 12C0 5.373 5.373 0 12 0s12 5.373 12 12-5.373 12-12 12S0 18.627 0 12zm10.496-2.047c-.504-.504-1.32-.504-1.824 0-.504.504-.504 1.32 0 1.824l2.047 2.047-2.047 2.047c-.504.504-.504 1.32 0 1.824.504.504 1.32.504 1.824 0l2.047-2.047 2.047 2.047c.504.504 1.32.504 1.824 0 .504-.504.504-1.32 0-1.824L13.367 12l2.047-2.047c.504-.504.504-1.32 0-1.824-.504-.504-1.32-.504-1.824 0L11.543 10.176 10.496 8.953z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-secondary">Tailwind CSS for styling</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <div class="w-8 h-8 bg-purple-100 rounded flex items-center justify-center">
+                                            <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                                <path d="M12 0C5.374 0 0 5.373 0 12s5.374 12 12 12 12-5.373 12-12S18.626 0 12 0zm5.568 13.8c-.29 1.176-1.029 1.416-2.105 1.416-.043 0-.081 0-.119-.016v.016h-2.93V9.272h2.93v3.888c.038-.025.082-.034.119-.034.418 0 .748-.324.748-.748V9.272h2.357v3.106c0 .423-.324.748-.748.748-.043 0-.081-.009-.119-.025v.025h2.93v3.888h-2.93c-.038.016-.076.016-.119.016z"/>
+                                            </svg>
+                                        </div>
+                                        <span class="text-secondary">Framer Motion for animations</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div class="card p-6">
+                                <h4 class="font-semibold mb-4 text-primary">Performance Optimizations</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                        <span class="text-secondary">Lazy loading for images</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                        <span class="text-secondary">Code splitting and bundling</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                        <span class="text-secondary">CDN implementation</span>
+                                    </li>
+                                    <li class="flex items-center space-x-3">
+                                        <svg class="w-5 h-5 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                        <span class="text-secondary">Progressive Web App features</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Collaboration Process -->
+                        <div class="bg-surface p-8 rounded-lg">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Collaboration & Workflow</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold mb-2 text-primary">Design Handoff</h4>
+                                    <p class="text-sm text-secondary">Detailed design specifications and component documentation using Figma</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-warning/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-warning" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold mb-2 text-primary">Agile Development</h4>
+                                    <p class="text-sm text-secondary">2-week sprints with regular design reviews and stakeholder feedback</p>
+                                </div>
+                                <div class="text-center">
+                                    <div class="w-16 h-16 bg-success/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                        <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-semibold mb-2 text-primary">Quality Assurance</h4>
+                                    <p class="text-sm text-secondary">Comprehensive testing across devices and browsers before launch</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!-- Results & Impact -->
+                    <section id="results" class="mb-16">
+                        <h2 class="text-display font-playfair mb-8 text-primary">Results & Impact</h2>
+                        
+                        <!-- Key Metrics -->
+                        <div class="mb-12">
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Measurable Results</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                    <div class="text-4xl font-playfair font-bold text-success mb-2">+40%</div>
+                                    <p class="text-secondary font-medium">Conversion Rate</p>
+                                    <p class="text-sm text-secondary mt-1">From 2.1% to 2.9%</p>
+                                </div>
+                                <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                    <div class="text-4xl font-playfair font-bold text-success mb-2">-45%</div>
+                                    <p class="text-secondary font-medium">Cart Abandonment</p>
+                                    <p class="text-sm text-secondary mt-1">From 78% to 43%</p>
+                                </div>
+                                <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                    <div class="text-4xl font-playfair font-bold text-success mb-2">4.7/5</div>
+                                    <p class="text-secondary font-medium">User Satisfaction</p>
+                                    <p class="text-sm text-secondary mt-1">Up from 2.1/5</p>
+                                </div>
+                                <div class="text-center p-6 bg-success/5 rounded-lg border border-success/20">
+                                    <div class="text-4xl font-playfair font-bold text-success mb-2">+65%</div>
+                                    <p class="text-secondary font-medium">Mobile Revenue</p>
+                                    <p class="text-sm text-secondary mt-1">Significant mobile growth</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Client Testimonial -->
+                        <div class="mb-12">
+                            <div class="bg-surface p-8 rounded-lg">
+                                <div class="flex items-start space-x-6">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Client testimonial" class="w-16 h-16 rounded-full object-cover flex-shrink-0" loading="lazy" onerror="this.src='https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                                    <div>
+                                        <blockquote class="text-lg text-secondary italic mb-4 leading-relaxed">
+                                            "The redesign exceeded our expectations. Not only did we see immediate improvements in conversion rates, but the user feedback has been overwhelmingly positive. The team's attention to detail and user-centered approach made all the difference."
+                                        </blockquote>
+                                        <div>
+                                            <div class="font-semibold text-primary">Sarah Johnson</div>
+                                            <div class="text-secondary">VP of Digital Experience, TechCorp</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Lessons Learned -->
+                        <div>
+                            <h3 class="font-playfair text-xl font-semibold mb-6 text-primary">Key Learnings & Takeaways</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-3 text-primary">What Worked Well</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Mobile-first design approach</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Extensive user research and testing</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Collaborative design-development process</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-success mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                            </svg>
+                                            <span>Performance optimization focus</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card p-6">
+                                    <h4 class="font-semibold mb-3 text-primary">Areas for Improvement</h4>
+                                    <ul class="space-y-2 text-secondary">
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-warning mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>Earlier stakeholder involvement</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-warning mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>More comprehensive accessibility testing</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-warning mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>International user consideration</span>
+                                        </li>
+                                        <li class="flex items-start space-x-3">
+                                            <svg class="w-5 h-5 text-warning mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+                                            </svg>
+                                            <span>Post-launch monitoring strategy</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Work -->
+    <section class="py-20 bg-surface">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-display font-playfair mb-4 text-primary">Related Projects</h2>
+                <p class="text-lg text-secondary">
+                    Explore other case studies showcasing similar challenges and solutions
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Related Project 1 -->
+                <div class="card group cursor-pointer overflow-hidden" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="FinTech mobile app" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">FinTech Mobile App</h3>
+                        <p class="text-secondary mb-4">User-centered design for complex financial workflows</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Mobile Design</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">User Research</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Project 2 -->
+                <div class="card group cursor-pointer overflow-hidden" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Analytics dashboard" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Analytics Dashboard</h3>
+                        <p class="text-secondary mb-4">Complex data visualization made intuitive and actionable</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Data Viz</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Dashboard Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Related Project 3 -->
+                <div class="card group cursor-pointer overflow-hidden" onclick="window.location.href='case_study_template_process_storytelling.html'">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg" alt="Brand identity system" class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-all duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-playfair text-xl font-semibold mb-2 text-primary">Brand Identity System</h3>
+                        <p class="text-secondary mb-4">Complete rebrand including logo, guidelines, and digital assets</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Brand Strategy</span>
+                            <span class="px-3 py-1 bg-surface text-secondary text-sm rounded-full">Visual Identity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="work_portfolio_grid_filterable_showcase.html" class="btn-primary text-lg px-8 py-4">
+                    View All Projects
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <a href="homepage_creative_portfolio_showcase.html" class="text-2xl font-playfair font-bold text-primary mb-4 block">
+                        Portfolio<span class="text-accent">.</span>
+                    </a>
+                    <p class="text-secondary mb-6 max-w-md">
+                        Creating digital experiences that seamlessly blend aesthetic excellence with strategic thinking, 
+                        where invisible design becomes extraordinary.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.840-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-surface rounded-full flex items-center justify-center text-secondary hover:text-accent hover:bg-accent/10 transition-all duration-300">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91-.11-.937-.227-2.482.025-3.566.217-.932 1.405-5.956 1.405-5.956s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.748-1.378 0 0-.599 2.282-.744 2.840-.282 1.084-1.064 2.456-1.549 3.235C9.584 23.815 10.77 24.001 12.017 24.001c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4 text-primary">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="work_portfolio_grid_filterable_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="about_personal_brand_story.html" class="text-secondary hover:text-accent transition-colors duration-300">About</a></li>
+                        <li><a href="process_methodology_showcase.html" class="text-secondary hover:text-accent transition-colors duration-300">Process</a></li>
+                        <li><a href="blog_insights_thought_leadership.html" class="text-secondary hover:text-accent transition-colors duration-300">Blog</a></li>
+                        <li><a href="resources_value_added_downloads.html" class="text-secondary hover:text-accent transition-colors duration-300">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-playfair text-lg font-semibold mb-4 text-primary">Get in Touch</h3>
+                    <ul class="space-y-2">
+                        <li><a href="contact_conversion_optimization.html" class="text-secondary hover:text-accent transition-colors duration-300">Contact Form</a></li>
+                        <li><a href="mailto:hello@portfolio.com" class="text-secondary hover:text-accent transition-colors duration-300">hello@portfolio.com</a></li>
+                        <li><a href="tel:+1234567890" class="text-secondary hover:text-accent transition-colors duration-300">+1 (234) 567-890</a></li>
+                        <li class="text-secondary">Available for projects</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-100 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-secondary text-sm">
+                    © 2025 Portfolio Reimagined. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Privacy Policy</a>
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Terms of Service</a>
+                    <a href="#" class="text-secondary hover:text-accent text-sm transition-colors duration-300">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Sidebar navigation and progress tracking
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('section[id]');
+        const progressBar = document.getElementById('progress-bar');
+        const progressText = document.getElementById('progress-text');
+
+        // Update active navigation and progress
+        function updateNavigation() {
+            const scrollPosition = window.scrollY + 200;
+            const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollProgress = Math.min((window.scrollY / documentHeight) * 100, 100);
+            
+            // Update progress bar
+            progressBar.style.width = `${scrollProgress}%`;
+            progressText.textContent = `${Math.round(scrollProgress)}%`;
+            
+            // Update active section
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        link.querySelector('.w-2').classList.remove('bg-accent');
+                        link.querySelector('.w-2').classList.add('bg-gray-300');
+                    });
+                    
+                    const activeLink = document.querySelector(`a[href="#${section.id}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                        activeLink.querySelector('.w-2').classList.remove('bg-gray-300');
+                        activeLink.querySelector('.w-2').classList.add('bg-accent');
+                    }
+                }
+            });
+        }
+
+        // Smooth scrolling for sidebar navigation
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Listen for scroll events
+        window.addEventListener('scroll', updateNavigation);
+        
+        // Initial call
+        updateNavigation();
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-medium');
+            } else {
+                nav.classList.remove('shadow-medium');
+            }
+        });
+
+        // Expandable sections for mobile
+        const expandableHeaders = document.querySelectorAll('h3');
+        expandableHeaders.forEach(header => {
+            if (window.innerWidth <= 768) {
+                header.style.cursor = 'pointer';
+                header.addEventListener('click', () => {
+                    const content = header.nextElementSibling;
+                    if (content) {
+                        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
